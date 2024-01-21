@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/1CfNYHy.png');
+    background-repeat: repeat; /* Repetir a imagem em ambas as direções */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(51, 51, 51, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+h1 {
+    color: #ff9800; /* Orange color */
+}
+
+label, select, input, button {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select, input {
+    background-color: #444;
+    color: #fff;
+}
+
+button {
+    background-color: #ff9800;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc80; /* Lighter shade of orange on hover */
+}
+
+p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Additional Styling for Switch Direction Button */
+button#switchDirection {
+    background-color: #4caf50; /* Green color */
+}
+
+button#switchDirection:hover {
+    background-color: #63a04e; /* Lighter shade of green on hover */
+}

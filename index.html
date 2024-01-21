@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor USDT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z94VXPK0LE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z94VXPK0LE');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor USDT</h1>
+        <label for="amount">Digite o valor:</label>
+        <input type="number" id="amount" placeholder="Digite o valor" />
+        <label for="fromCurrency">De:</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="BRL">BRL</option>
+            <option value="MXN">MXN</option>
+            <option value="SGD">SGD</option>
+            <!-- Adicione mais opções de moedas conforme necessário -->
+        </select>
+        <label for="toCurrency">Para:</label>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="BRL">BRL</option>
+            <option value="MXN">MXN</option>
+            <option value="SGD">SGD</option>
+            <!-- Adicione mais opções de moedas conforme necessário -->
+        </select>
+        <button onclick="convert()">Converter</button>
+        <p id="result"></p>
+        <button onclick="toggleDirection()" id="switchDirection">Inverter Direção</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
